@@ -8,8 +8,9 @@ export default function Intro() {
         <h1 className='title no-underline'>Hey, I&#39;m Mihai-Cristian.</h1>
         <p className='font-light text-muted-foreground'>
           Currently a software developer based in Cluj-Napoca, Romania. I&#39;m
-          passionate about learning, be it programming, literature, psychology
-          and so much more. Here to experience, create and share my journey.
+          passionate about learning, be it programming, philosophy, psychology,
+          religion and much more. Here to create, experience and share my
+          journey.
         </p>
       </div>
       <div className='relative'>
