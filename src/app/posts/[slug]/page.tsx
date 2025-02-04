@@ -7,7 +7,7 @@ import { formatDate } from '@/lib/utils'
 import { ArrowLeftIcon } from '@radix-ui/react-icons'
 
 export default async function Post({ params }: { params: { slug: string } }) {
-  const { slug } = params
+  const { slug } = await params
   const post = await getPostBySlug(slug)
 
   if (!post) {
@@ -28,6 +28,16 @@ export default async function Post({ params }: { params: { slug: string } }) {
           <span>Back to all posts</span>
         </Link>
 
+        <header>
+          <h1 className='title'>{title}</h1>
+          <p className='mt-3 text-xs text-muted-foreground'>
+            {formatDate(date ?? '')}
+          </p>
+          {summary && (
+            <p className='mb-3 mt-3 text-muted-foreground'>{summary}</p>
+          )}
+        </header>
+
         {image && (
           <div className='relative mb-6 h-96 w-full overflow-hidden rounded-lg'>
             <Image
@@ -39,15 +49,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
           </div>
         )}
 
-        <header>
-          <h1 className='title'>{title}</h1>
-          <p className='mt-3 text-xs text-muted-foreground'>
-            {formatDate(date ?? '')}
-          </p>
-          {summary && <p className='mt-3 text-muted-foreground'>{summary}</p>}
-        </header>
-
-        <main className='prose dark:prose-invert mt-16'>
+        <main className='prose mt-8 dark:prose-invert'>
           <MDXRemote source={content} />
         </main>
       </div>

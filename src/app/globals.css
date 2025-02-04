@@ -75,20 +75,20 @@ body {
     @apply font-serif text-3xl font-bold underline decoration-border/75 decoration-2 underline-offset-8 ;
   }
 
-  .prose pre {
-    @apply overflow-x-auto rounded-lg bg-accent px-5 py-4 text-sm;
-  }
-
-  .prose code {
-    @apply rounded-lg px-1 py-0.5;
-  }
-
-  .prose pre code {
-    @apply p-0;
-    line-height: 1.75;
-  }
-
-  .prose code span {
-    @apply font-medium;
-  }
+    .prose pre {
+      @apply overflow-x-auto rounded-lg bg-accent px-5 py-4 text-sm;
+    }
+  
+    .prose code {
+      @apply rounded-lg px-1 py-0.5;
+    }
+  
+    .prose pre code {
+      @apply p-0;
+      line-height: 1.75;
+    }
+  
+    .prose code span {
+      @apply font-medium;
+    }
 }
