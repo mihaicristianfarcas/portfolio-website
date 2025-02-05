@@ -4,7 +4,6 @@ import { MDXRemote, MDXRemoteProps } from 'next-mdx-remote/rsc'
 
 import Counter from '@/components/counter'
 
-// TODO fix syntax highlighting
 function Code({ children, ...props }: any) {
   const codeHTML = highlight(children)
   return <code dangerouslySetInnerHTML={{ __html: codeHTML }} {...props} />

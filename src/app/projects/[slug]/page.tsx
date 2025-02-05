@@ -1,38 +1,42 @@
-import { getPostBySlug } from '@/lib/posts'
+import { getProjectBySlug } from '@/lib/projects'
 import { notFound } from 'next/navigation'
 import { formatDate } from '@/lib/utils'
 import { ArrowLeftIcon } from '@radix-ui/react-icons'
-import { getPosts } from '@/lib/posts'
+import { getProjects } from '@/lib/projects'
 import Link from 'next/link'
 import Image from 'next/image'
 import MDXContent from '@/components/ui/mdx-content'
 
 export async function generateStaticParams() {
-  const posts = await getPosts()
-  const slugs = posts.map(post => ({ slug: post.slug }))
+  const projects = await getProjects()
+  const slugs = projects.map(project => ({ slug: project.slug }))
   return slugs
 }
 
-export default async function Post({ params }: { params: { slug: string } }) {
+export default async function Project({
+  params
+}: {
+  params: { slug: string }
+}) {
   const { slug } = await params
-  const post = await getPostBySlug(slug)
+  const project = await getProjectBySlug(slug)
 
-  if (!post) {
+  if (!project) {
     notFound()
   }
 
-  const { metadata, content } = post
+  const { metadata, content } = project
   const { author, title, summary, image, date } = metadata
 
   return (
     <section className='pb-24 pt-32'>
       <div className='container max-w-3xl'>
         <Link
-          href='/posts'
+          href='/projects'
           className='mb-6 inline-flex items-center gap-2 text-sm font-light text-muted-foreground transition-colors hover:text-foreground'
         >
           <ArrowLeftIcon className='h-5 w-5' />
-          <span>Back to all posts</span>
+          <span>Back to all projects</span>
         </Link>
 
         <header>
