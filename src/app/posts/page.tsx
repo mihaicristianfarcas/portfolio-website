@@ -1,5 +1,5 @@
 import { getPosts } from '@/lib/posts'
-import Posts from '@/components/ui/posts'
+import PostsWithSearch from '@/components/ui/posts-with-search'
 
 export default async function PostsPage() {
   const posts = await getPosts()
@@ -8,7 +8,7 @@ export default async function PostsPage() {
     <section className='pb-24 pt-40'>
       <div className='container max-w-3xl'>
         <h1 className='title mb-8'>Posts</h1>
-        <Posts posts={posts} />
+        <PostsWithSearch posts={posts} />
       </div>
     </section>
   )
