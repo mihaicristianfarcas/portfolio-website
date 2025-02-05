@@ -8,6 +8,7 @@ body {
 
 @layer base {
   :root {
+    --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
     --card: 0 0% 100%;
     --card-foreground: 240 10% 3.9%;
@@ -33,17 +34,35 @@ body {
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
 
-    --sh-class: #2d5e9d;
-    --sh-identifier: #354150;
-    --sh-sign: #8996a3;
-    --sh-property: #0550ae;
-    --sh-entity: #249a97;
-    --sh-jsxliterals: #6266d1;
-    --sh-string: #00a99a;
-    --sh-keyword: #f47067;
-    --sh-comment: #a19595;
+    --sh-class: #d73a49;
+    --sh-identifier: #6f42c1;
+    --sh-sign: #d73a49;
+    --sh-property: #005cc5;
+    --sh-entity: #6f42c1;
+    --sh-jsxliterals: #22863a;
+    --sh-string: #032f62;
+    --sh-keyword: #d73a49;
+    --sh-comment: #6a737d;
+    --sh-constant: #005cc5;
+    --sh-attribute: #6f42c1;
+    --sh-regex: #032f62;
+    --sh-number: #005cc5;
+    --sh-boolean: #d73a49;
+    --sh-function: #6f42c1;
+    --sh-params: #005cc5;
+    --sh-punctuation: #d73a49;
+    --sh-operator: #d73a49;
+    --sh-variable: #e36209;
+    --sh-namespace: #6f42c1;
+    --sh-meta: #6f42c1;
+    --sh-metastring: #032f62;
+    --sh-error: #d73a49;
+    --sh-markup: #005cc5;
+    --sh-tag: #22863a;
+    --sh-attr: #6f42c1;
   }
   .dark {
+    --background: 240 10% 3.9%;
     --foreground: 0 0% 98%;
     --card: 240 10% 3.9%;
     --card-foreground: 0 0% 98%;
@@ -68,10 +87,32 @@ body {
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
 
-    --sh-class: #4c97f8;
-    --sh-identifier: #white;
-    --sh-keyword: #ff6a6a;
-    --sh-string: #0fa295;
+    --sh-class: #79b8ff;
+    --sh-identifier: #b392f0;
+    --sh-sign: #ff7b72;
+    --sh-property: #79b8ff;
+    --sh-entity: #b392f0;
+    --sh-jsxliterals: #85e89d;
+    --sh-string: #9ecbff;
+    --sh-keyword: #ff7b72;
+    --sh-comment: #6a737d;
+    --sh-constant: #79b8ff;
+    --sh-attribute: #b392f0;
+    --sh-regex: #9ecbff;
+    --sh-number: #79b8ff;
+    --sh-boolean: #ff7b72;
+    --sh-function: #b392f0;
+    --sh-params: #79b8ff;
+    --sh-punctuation: #ff7b72;
+    --sh-operator: #ff7b72;
+    --sh-variable: #e36209;
+    --sh-namespace: #b392f0;
+    --sh-meta: #b392f0;
+    --sh-metastring: #9ecbff;
+    --sh-error: #ff7b72;
+    --sh-markup: #79b8ff;
+    --sh-tag: #85e89d;
+    --sh-attr: #b392f0;
   }
 }
 
@@ -85,7 +126,7 @@ body {
   }
 
   .title {
-    @apply font-serif text-3xl font-bold underline decoration-border/75 decoration-4 underline-offset-8 ;
+    @apply font-serif text-3xl font-bold underline decoration-border/75 decoration-2 underline-offset-8 ;
   }
 
   .prose pre {
