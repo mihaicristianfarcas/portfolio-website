@@ -2,9 +2,9 @@ import { getPostBySlug } from '@/lib/posts'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
-import { MDXRemote } from 'next-mdx-remote/rsc'
 import { formatDate } from '@/lib/utils'
 import { ArrowLeftIcon } from '@radix-ui/react-icons'
+import MDXContent from '@/components/ui/mdx-content'
 
 export default async function Post({ params }: { params: { slug: string } }) {
   const { slug } = await params
@@ -15,7 +15,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
   }
 
   const { metadata, content } = post
-  const { title, summary, image, date } = metadata
+  const { author, title, summary, image, date } = metadata
 
   return (
     <section className='pb-24 pt-32'>
@@ -31,7 +31,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
         <header>
           <h1 className='title'>{title}</h1>
           <p className='mt-3 text-xs text-muted-foreground'>
-            {formatDate(date ?? '')}
+            {author} / {formatDate(date ?? '')}
           </p>
           {summary && (
             <p className='mb-3 mt-3 text-muted-foreground'>{summary}</p>
@@ -50,7 +50,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
         )}
 
         <main className='prose mt-8 dark:prose-invert'>
-          <MDXRemote source={content} />
+          <MDXContent source={content} />
         </main>
       </div>
     </section>
