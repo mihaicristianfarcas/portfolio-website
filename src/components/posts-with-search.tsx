@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { PostMetadata } from '@/lib/posts'
 
-import Posts from '@/components/ui/posts'
+import Posts from '@/components/posts'
 import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
 

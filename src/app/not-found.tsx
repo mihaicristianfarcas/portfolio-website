@@ -3,10 +3,10 @@ import { ArrowLeftIcon } from '@radix-ui/react-icons'
 
 export default function NotFound() {
   return (
-    <section className='flex min-h-screen items-center justify-center py-16'>
+    <section className='flex min-h-screen items-center justify-center'>
       <div className='px-4 sm:px-6 md:px-8'>
         <div className='mx-auto max-w-2xl'>
-          <main className='flex flex-col items-center gap-6 sm:flex-row'>
+          <main className='flex flex-col items-start gap-6 sm:flex-row sm:items-center'>
             <p className='text-4xl font-bold tracking-tight text-muted-foreground'>
               404
             </p>

@@ -1,21 +1,21 @@
 import Link from 'next/link'
-import { getPosts } from '@/lib/posts'
+import { getProjects } from '@/lib/projects'
 import { ArrowRightIcon } from '@radix-ui/react-icons'
-import Posts from '@/components/ui/posts'
+import Projects from '@/components/projects'
 
 export default async function RecentPosts() {
-  const posts = await getPosts(4)
+  const projects = await getProjects(4)
 
   return (
-    <section className='pb-20'>
+    <section className='pb-24'>
       <div>
-        <h2 className='title mb-6'>My Recent Posts</h2>
-        <Posts posts={posts} />
+        <h2 className='title mb-6'>My Recent Projects</h2>
+        <Projects projects={projects} />
         <Link
-          href='/posts'
+          href='/projects'
           className='mb-6 mt-6 inline-flex items-center gap-2 text-sm font-light text-muted-foreground transition-colors hover:text-foreground'
         >
-          <span>Go to all posts</span>
+          <span>Go to all projects</span>
           <ArrowRightIcon className='h-5 w-5' />
         </Link>
       </div>

@@ -5,7 +5,7 @@ import { ArrowLeftIcon } from '@radix-ui/react-icons'
 import { getProjects } from '@/lib/projects'
 import Link from 'next/link'
 import Image from 'next/image'
-import MDXContent from '@/components/ui/mdx-content'
+import MDXContent from '@/components/mdx-content'
 
 export async function generateStaticParams() {
   const projects = await getProjects()
