@@ -12,18 +12,25 @@ export default function ThemeToggle() {
 
   useEffect(() => setMounted(true), [])
 
-  if (!mounted) return null
-
   return (
     <Button
       variant='ghost'
       size='sm'
       onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
+      aria-label={
+        mounted
+          ? `Switch to ${resolvedTheme === 'dark' ? 'light' : 'dark'} theme`
+          : 'Theme toggle'
+      }
     >
-      {resolvedTheme === 'dark' ? (
-        <SunIcon className='size-4 text-yellow-400' />
+      {mounted ? (
+        resolvedTheme === 'dark' ? (
+          <SunIcon className='size-4 text-yellow-400' />
+        ) : (
+          <MoonIcon className='size-4 text-sky-950' />
+        )
       ) : (
-        <MoonIcon className='size-4 text-sky-950' />
+        <div className='size-4' />
       )}
     </Button>
   )
