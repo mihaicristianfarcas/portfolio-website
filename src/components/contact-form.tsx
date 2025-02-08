@@ -9,7 +9,7 @@ import { ContactFormSchema } from '@/lib/schemas'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
-// import { sendMail } from '@/lib/actions'
+import { sendEmail } from '@/lib/actions'
 
 type ContactFormInputs = z.infer<typeof ContactFormSchema>
 
@@ -29,12 +29,12 @@ export default function ContactForm() {
   })
 
   const onSubmit: SubmitHandler<ContactFormInputs> = async data => {
-    // const result = await sendMail(data)
+    const result = await sendEmail(data)
 
-    // if (result?.error) {
-    //   toast.error('An error occurred. Please try again.')
-    //   return
-    // }
+    if (result?.error) {
+      toast.error('An error occurred. Please try again.')
+      return
+    }
 
     toast.success('Message sent successfully!')
     reset()

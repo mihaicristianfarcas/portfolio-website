@@ -28,7 +28,7 @@ export default function Projects({
               </div>
             )}
 
-            <div className='absolute left-1/2 top-1/2 w-4/5 -translate-x-1/2 -translate-y-1/2 rounded-lg bg-white/85 p-4 opacity-0 shadow-lg transition-opacity duration-300 group-hover:opacity-100 dark:bg-black/85'>
+            <div className='absolute left-1/2 top-1/2 w-4/5 -translate-x-1/2 -translate-y-1/2 rounded-lg bg-background/90 p-4 opacity-0 shadow-lg transition-opacity duration-300 group-hover:opacity-100'>
               <h2 className='title line-clamp-1 text-xl no-underline'>
                 {project.title}
               </h2>
