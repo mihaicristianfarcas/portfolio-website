@@ -2,7 +2,7 @@ const navigation = [
   {
     name: 'GitHub',
     href: 'https://github.com/Forquosh',
-    icon: props => (
+    icon: (props: React.SVGProps<SVGSVGElement>) => (
       <svg
         {...props}
         xmlns='http://www.w3.org/2000/svg'
@@ -17,7 +17,7 @@ const navigation = [
   {
     name: 'LinkedIn',
     href: 'https://www.linkedin.com/in/mihai-cristian-farcas-6660542a6/',
-    icon: props => (
+    icon: (props: React.SVGProps<SVGSVGElement>) => (
       <svg
         {...props}
         xmlns='http://www.w3.org/2000/svg'
@@ -31,7 +31,7 @@ const navigation = [
   {
     name: 'X',
     href: 'https://x.com/Forquosh',
-    icon: props => (
+    icon: (props: React.SVGProps<SVGSVGElement>) => (
       <svg
         {...props}
         xmlns='http://www.w3.org/2000/svg'
