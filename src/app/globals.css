@@ -35,32 +35,15 @@ body {
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
 
-    --sh-class: #d6216f;
-    --sh-identifier: #4834d4;
-    --sh-sign: #b12121;
-    --sh-property: #0652a3;
-    --sh-entity: #6d238d;
-    --sh-jsxliterals: #008b6f;
-    --sh-string: #1a1d1e;
-    --sh-keyword: #c44d2d;
-    --sh-comment: #4a5356;
-    --sh-constant: #003c96;
-    --sh-attribute: #7b3ab8;
-    --sh-regex: #167c45;
-    --sh-number: #004ba1;
-    --sh-boolean: #d41f31;
-    --sh-function: #4411a8;
-    --sh-params: #154d6e;
-    --sh-punctuation: #c41e1f;
-    --sh-operator: #d14242;
-    --sh-variable: #d66a1d;
-    --sh-namespace: #5039d1;
-    --sh-meta: #732b8f;
-    --sh-metastring: #0a7b5d;
-    --sh-error: #d41f1f;
-    --sh-markup: #1a62b3;
-    --sh-tag: #1ba35e;
-    --sh-attr: #7b3ab8;
+    --sh-identifier: #354150;
+    --sh-keyword: #f47067;
+    --sh-string: #007a70;
+    --sh-class: #8d85ff;
+    --sh-property: #4e8fdf;
+    --sh-entity: #00a99a;
+    --sh-jsxliterals: #bf7db6;
+    --sh-sign: #8996a3;
+    --sh-comment: #a19595;
   }
   .dark {
     --background: 240 17% 12%;
@@ -88,32 +71,15 @@ body {
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
 
-    --sh-class: #74b9ff;
     --sh-identifier: #a29bfe;
-    --sh-sign: #ff7675;
+    --sh-keyword: #fab1a0;
+    --sh-string: #81ecec;
+    --sh-class: #74b9ff;
     --sh-property: #48dbfb;
     --sh-entity: #c8d6e5;
     --sh-jsxliterals: #55efc4;
-    --sh-string: #81ecec;
-    --sh-keyword: #fab1a0;
+    --sh-sign: #ff7675;
     --sh-comment: #95afc0;
-    --sh-constant: #70a1ff;
-    --sh-attribute: #b992fe;
-    --sh-regex: #00cec9;
-    --sh-number: #4bcffa;
-    --sh-boolean: #ff7f50;
-    --sh-function: #9c88ff;
-    --sh-params: #54a0ff;
-    --sh-punctuation: #ff6b81;
-    --sh-operator: #ff7f50;
-    --sh-variable: #ffa502;
-    --sh-namespace: #5f27cd;
-    --sh-meta: #c56cf0;
-    --sh-metastring: #00d2d3;
-    --sh-error: #ff6b6b;
-    --sh-markup: #48dbfb;
-    --sh-tag: #00b894;
-    --sh-attr: #a55eea;
   }
 }
 
