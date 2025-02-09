@@ -6,7 +6,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* TODO better syntax highlighting */
+/* TODO change fonts? */
 @layer base {
   :root {
     --background: 40 35% 93%;
@@ -35,7 +35,7 @@ body {
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
 
-    --sh-identifier: #354150;
+    --sh-identifier: #c2255f;
     --sh-keyword: #f47067;
     --sh-string: #007a70;
     --sh-class: #8d85ff;
