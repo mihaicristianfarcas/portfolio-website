@@ -19,7 +19,7 @@ A modern, responsive portfolio website built with **Next.js 15**, **TypeScript**
 - **Styling:** Tailwind CSS
 - **Content:** MDX with gray-matter
 - **Email:** Resend
-- **UI Components:** Radix UI
+- **UI Components:** Radix UI, Shadcn UI
 - **Form Handling:** React Hook Form + Zod
 - **Notifications:** Sonner
 
