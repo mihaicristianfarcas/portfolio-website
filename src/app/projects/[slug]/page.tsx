@@ -56,7 +56,7 @@ export default async function Project({ params }: any) {
           </div>
         )}
 
-        <main className='prose mt-8 dark:prose-invert'>
+        <main className='prose mt-8 max-w-3xl dark:prose-invert'>
           <MDXContent source={content} />
         </main>
       </div>
