@@ -16,7 +16,7 @@ const navigation = [
   },
   {
     name: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/mihai-cristian-farcas-6660542a6/',
+    href: 'https://www.linkedin.com/in/mihai-cristian-farcaș-6660542a6',
     icon: (props: React.SVGProps<SVGSVGElement>) => (
       <svg
         {...props}
