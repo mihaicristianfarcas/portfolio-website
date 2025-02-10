@@ -14,6 +14,7 @@ export type PostMetadata = {
     title?: string
     summary?: string
     image?: string
+    source?: string
     date?: string
     slug: string
 }

@@ -22,7 +22,7 @@ export default async function Page({ params }: any) {
   }
 
   const { metadata, content } = post
-  const { author, title, summary, image, date } = metadata
+  const { author, title, summary, image, source, date } = metadata
 
   return (
     <section className='pb-24 pt-32'>
@@ -46,7 +46,7 @@ export default async function Page({ params }: any) {
         </header>
 
         {image && (
-          <div className='relative mb-6 h-96 w-full overflow-hidden rounded-lg'>
+          <div className='relative mb-3 h-96 w-full overflow-hidden rounded-lg'>
             <Image
               src={image}
               alt={title || ''}
@@ -54,6 +54,11 @@ export default async function Page({ params }: any) {
               fill
             />
           </div>
+        )}
+        {image && source && (
+          <a href={source} className='text-muted-foreground underline'>
+            Image source
+          </a>
         )}
 
         <main className='prose mt-8 max-w-3xl dark:prose-invert'>
