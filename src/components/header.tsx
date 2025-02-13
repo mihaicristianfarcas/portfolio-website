@@ -15,7 +15,7 @@ export default function Header() {
               height='30'
               viewBox='0 0 384.000000 488.000000'
               preserveAspectRatio='xMidYMid meet'
-              className='fill-foreground'
+              className='fill-foreground hover:fill-muted-foreground'
             >
               <g
                 transform='translate(0.000000,488.000000) scale(0.100000,-0.100000)'
