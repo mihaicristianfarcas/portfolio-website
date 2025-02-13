@@ -1,7 +1,6 @@
 'use client'
 
 import { z } from 'zod'
-// import Link from 'next/link'
 import { toast } from 'sonner'
 import { SubmitHandler, useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
@@ -10,6 +9,7 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { sendEmail } from '@/lib/actions'
+import { PrivacyPolicyDialog } from '@/components/privacy-policy'
 
 type ContactFormInputs = z.infer<typeof ContactFormSchema>
 
@@ -107,14 +107,9 @@ export default function ContactForm() {
             {isSubmitting ? 'Submitting...' : 'Contact Me'}
           </Button>
         </div>
-        {/* TODO add privacy policy */}
-        {/* <p className='mt-4 text-xs text-muted-foreground'>
-          By submitting this form, you agree to my{' '}
-          <Link href='/privacy-policy' className='font-bold'>
-            privacy&nbsp;policy
-          </Link>
-          .
-        </p> */}
+        <p className='mt-4 text-xs text-muted-foreground'>
+          By submitting this form, you agree to my <PrivacyPolicyDialog />.
+        </p>
       </form>
     </section>
   )
