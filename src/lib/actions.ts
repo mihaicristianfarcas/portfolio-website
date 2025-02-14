@@ -2,7 +2,7 @@
 
 import { z } from 'zod'
 import { Resend } from 'resend'
-import { ContactFormSchema } from '@/lib/schemas'
+import { ContactFormSchema, NewsletterFormSchema } from '@/lib/schemas'
 import ContactFormEmail from '@/emails/contact-form-email'
 
 type ContactFormInputs = z.infer<typeof ContactFormSchema>
@@ -38,4 +38,15 @@ export async function sendEmail(data: ContactFormInputs) {
     } catch (error) {
         return { error }
     }
+}
+
+export async function subscribe(data: { email: string }) {
+    const result = NewsletterFormSchema.safeParse(data)
+
+    if(result.error) {
+        return {error: result.error.format()}
+    }
+
+    // TODO - Implement Mailchimp integration
+    return { success: true }
 }
