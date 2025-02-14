@@ -9,13 +9,13 @@ summary: GPT-like model implementation built from scratch using PyTorch.
 
 ## _My PyTorch implementation of a GPT-like language model with text preprocessing utilities_
 
-### Overview
+## _Overview_
 
 This project implements a transformer-based language model similar to GPT, designed for **character-level text generation**. It includes utilities for vocabulary generation and dataset splitting.
 
-In this example, I tested it on the fabulous book **The Brothers Karamazov**, downloaded from **Project Gutenberg**. Feel free to change the text file or even try training it on an consacrated dataset (like **OpenWebText** for example), though on larger datasets the `vocab.py` and `split.py` might not work properly.
+In this example, I trained and tested it on the fabulous book **[The Brothers Karamazov](https://www.gutenberg.org/ebooks/28054)**, downloaded from **Project Gutenberg**. Feel free to change the text file or even try training it on an consacrated dataset (like **OpenWebText**, for example), though on larger datasets the `vocab.py` and `split.py` might not work properly.
 
-### Features
+## _Features_
 
 - Character-level language modeling
 - Multi-head self-attention mechanism
@@ -23,102 +23,62 @@ In this example, I tested it on the fabulous book **The Brothers Karamazov**, do
 - Text preprocessing utilities
 - Configurable model architecture
 
-### Requirements
+## _Requirements_
 
 - Python 3.9+
 - PyTorch
 - Jupyter Notebooks
 - CUDA (optional, for GPU acceleration, **on Windows**)
 
-### Project Structure
+## _Project Structure_
 
 - `vocab.py` - Generates vocabulary from input text
 - `split.py` - Splits text data into training and validation sets
 - `GPT.ipynb` - Main model implementation and training
 
-### Usage
+## _Usage_
 
-### 1. Initialization (Windows and MacOS)
-
-_**! The requirements are different. On Windows, PyTorch is installed with CUDA support, if available**_
-
-### INITIALIZATION STEPS FOR **MAC OS**
-
-Run the terminal in a directory of choice.
-
-Create a _Python Virtual Environment_ and _activate_ it:
-
-```bash
-python3 -m venv venv
-source ./venv/bin/activate
-```
-
-Install the _MacOS requirements_:
-
-```bash
-pip3 install -r requirements_macos.txt
-```
-
-### INITIALIZATION STEPS FOR **WINDOWS**
-
-Install [Python](https://www.python.org/downloads/) on your system. If you have it already, skip this step.
-
-Install [Anaconda](https://www.anaconda.com/download). Follow the steps from this link.
-
-Once installed, run **Anaconda Prompt** in a directory of choice.
-
-Create a _Python Virtual Environment_ and _activate_ it:
-
-```bash
-python3 -m venv venv
-venv\Scripts\activate
-```
-
-Install the _Windows requirements_:
-
-```bash
-pip3 install -r requirements_windows.txt
-```
+### 1. Initialization (details on [my Github](https://github.com/Forquosh/GPT.git))
 
 ### 2. Prepare Your Data
 
-First, _add your desired data file and generate the vocabulary from your text_:
+- First, add your desired data file and generate the vocabulary from your text:
 
 ```bash
 python3 vocab.py
 ```
 
-Then, _split your data into training and validation sets_:
+- Then, split your data into training and validation sets:
 
 ```bash
 python3 split.py
 ```
 
-### 2. Train the Model
+### 3. Train the Model
 
-Install a _new kernel_ to use in your Jupyter Notebook:
+- Install a new kernel to use in your Jupyter Notebook:
 
 ```bash
 python3 -m ipykernel install --user --name=venv --display-name "GPTKernel"
 ```
 
-Run _Jupyter Notebook_:
+- Run Jupyter Notebook:
 
 ```bash
 jupyter notebook
 ```
 
-Open `GPT.ipynb`.
+- Open `GPT.ipynb`.
 
-Select `GPTKernel` and run the cells _sequentially_.
+- Select `GPTKernel` and run the cells sequentially.
 
-**The notebook contains**:
+## _The notebook contains_
 
 - Model architecture implementation
 - Training loop
 - Text generation functionality
 
-## Model Architecture
+## _Model Architecture_
 
 The model implements a transformer architecture with:
 
