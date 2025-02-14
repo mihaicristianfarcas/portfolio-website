@@ -22,9 +22,9 @@ export async function sendEmail(data: ContactFormInputs) {
 
         const { data, error } = await resend.emails.send({
             from: 'hello@forquosh.dev',
-            to: [email],
-            cc: ['mihaifarcas125@gmail.com'],
-            subject: `Contact Form Submission from ${name}`,
+            to: ['mihaifarcas125@gmail.com'],
+            replyTo: email,
+            subject: `Contact Form Submission`,
             text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
             react: emailHTML
         })
