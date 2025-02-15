@@ -15,7 +15,9 @@ const WelcomeEmail: React.FC<Readonly<WelcomeEmailProps>> = ({ email }) => (
       reply to this email and let me know.
     </p>
     <p>Best regards,</p>
-    <p className='italic'>Mihai-Cristian Farcaș</p>
+    <p>
+      <strong>Mihai-Cristian Farcaș</strong>
+    </p>
   </div>
 )
 

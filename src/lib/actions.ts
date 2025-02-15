@@ -69,6 +69,7 @@ export async function subscribe(data: NewsletterFormInputs) {
             from: 'Mihai-Cristian Farcaș <newsletter@forquosh.dev>',
             to: [email],
             cc: 'mihaifarcas125@gmail.com',
+            replyTo: 'mihaifarcas125@gmail.com',
             subject: 'Welcome To My Newsletter!',
             react: emailHTML
         })
