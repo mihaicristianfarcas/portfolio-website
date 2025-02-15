@@ -60,6 +60,7 @@ export default function NewsletterForm() {
                 type='email'
                 id='email'
                 placeholder='Email'
+                autoComplete='email'
                 className='w-full'
                 {...register('email')}
               />
