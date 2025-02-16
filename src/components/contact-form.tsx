@@ -44,7 +44,7 @@ export default function ContactForm() {
     <section className='relative isolate'>
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className='mt-8 lg:flex-auto'
+        className='mt-4 lg:flex-auto'
         noValidate
       >
         <div className='grid grid-cols-1 gap-4 sm:grid-cols-2'>

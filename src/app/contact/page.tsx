@@ -21,7 +21,15 @@ export default function Contact() {
         </p>
         <ContactForm />
       </div>
-      <div className='container mt-32 max-w-3xl'>
+      <div className='container mt-24 max-w-3xl'>
+        <h2 className='title no-underline'>One more thing!</h2>
+        <p className='py-2 text-muted-foreground'>
+          I send out a newsletter once in a while via email. If you&apos;d like
+          to stay up to date with my latest blog posts and projects, feel free
+          to subscribe!
+        </p>
+      </div>
+      <div className='container mt-2 max-w-3xl'>
         <NewsletterForm />
       </div>
     </section>
