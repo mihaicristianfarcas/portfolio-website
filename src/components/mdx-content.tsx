@@ -2,6 +2,7 @@ import { JSX } from 'react'
 import { highlight } from 'sugar-high'
 import { MDXRemote, MDXRemoteProps } from 'next-mdx-remote/rsc'
 import Quote from '@/components/quote'
+import ContentFooter from './content-footer'
 
 function Code({ children, ...props }: any) {
   const codeHTML = highlight(children)
@@ -10,7 +11,8 @@ function Code({ children, ...props }: any) {
 
 const components = {
   code: Code,
-  Quote: Quote
+  Quote: Quote,
+  ContentFooter: ContentFooter
 }
 
 export default function MDXContent(
