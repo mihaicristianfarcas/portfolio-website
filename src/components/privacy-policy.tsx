@@ -19,9 +19,9 @@ export function PrivacyPolicyDialog() {
             <Dialog.Title className='title text-2xl font-semibold no-underline'>
               My Privacy Policy
             </Dialog.Title>
-            <Dialog.Description className='text-sm text-muted-foreground'>
+            {/* <Dialog.Description className='text-sm text-muted-foreground'>
               Last updated: {new Date().toLocaleDateString()}
-            </Dialog.Description>
+            </Dialog.Description> */}
           </div>
           <div className='flex flex-col gap-4'>
             <p className='text-muted-foreground'>
