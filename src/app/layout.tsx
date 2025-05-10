@@ -20,7 +20,7 @@ export default function RootLayout({
       <body className={`flex min-h-screen flex-col antialiased`}>
         <Providers>
           <Background />
-          <div className='mx-auto w-full max-w-4xl bg-background'>
+          <div className='mx-auto min-h-screen w-full max-w-4xl bg-background'>
             <Header />
             <main className='grow'>{children}</main>
             <Footer />
