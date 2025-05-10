@@ -3,7 +3,7 @@ import NewsletterForm from '@/components/newsletter-form'
 
 export default function Contact() {
   return (
-    <section className='py-36'>
+    <section className='min-h-screen py-36'>
       <div className='container max-w-3xl'>
         <h2 className='title no-underline'>Let&apos;s get in touch!</h2>
         <p className='mt-2 text-muted-foreground'>
