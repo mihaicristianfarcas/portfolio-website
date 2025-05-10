@@ -14,13 +14,12 @@ export default function Intro() {
           and much more. Here to experience, create and share my journey.
         </p>
       </div>
-      <div className='relative'>
+      <div className='relative h-60 w-60 sm:h-48 sm:w-48'>
         <Image
-          className='flex-1 rounded-lg'
+          className='rounded-lg object-cover'
           src={authorImage}
           alt='me.jpg'
-          width={175}
-          height={175}
+          fill
           priority
         />
       </div>
