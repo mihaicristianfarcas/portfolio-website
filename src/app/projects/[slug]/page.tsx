@@ -26,7 +26,7 @@ export default async function Project({ params }: any) {
 
   return (
     <section className='pb-24 pt-32'>
-      <div className='container max-w-3xl'>
+      <div className='container max-w-4xl'>
         <Link
           href='/projects'
           className='mb-6 inline-flex items-center gap-2 text-sm font-light text-muted-foreground transition-colors hover:text-foreground'
@@ -61,7 +61,7 @@ export default async function Project({ params }: any) {
           </a>
         )}
 
-        <main className='prose mt-8 max-w-3xl dark:prose-invert'>
+        <main className='prose mt-8 max-w-4xl dark:prose-invert'>
           <MDXContent source={content} />
         </main>
       </div>

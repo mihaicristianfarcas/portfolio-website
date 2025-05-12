@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en' suppressHydrationWarning>
-      <body className={`flex min-h-screen flex-col antialiased`}>
+      <body className={`flex flex-col antialiased`}>
         <Providers>
           <Background />
           <div className='mx-auto min-h-screen w-full max-w-4xl bg-background'>

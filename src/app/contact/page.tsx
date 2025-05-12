@@ -3,9 +3,9 @@ import NewsletterForm from '@/components/newsletter-form'
 
 export default function Contact() {
   return (
-    <section className='min-h-screen py-36'>
-      <div className='container max-w-3xl'>
-        <h2 className='title no-underline'>Let&apos;s get in touch!</h2>
+    <section className='pt-24'>
+      <div className='container max-w-4xl'>
+        <h2 className='title'>Let&apos;s get in touch!</h2>
         <p className='mt-2 text-muted-foreground'>
           I&apos;m always open to new opportunities and collaborations. Feel
           free to reach out to me.
@@ -21,15 +21,15 @@ export default function Contact() {
         </p>
         <ContactForm />
       </div>
-      <div className='container mt-24 max-w-3xl'>
-        <h2 className='title no-underline'>One more thing!</h2>
+      <div className='container mt-24 max-w-4xl'>
+        <h2 className='title'>One more thing!</h2>
         <p className='py-2 text-muted-foreground'>
           I send out a newsletter once in a while via email. If you&apos;d like
           to stay up to date with my latest blog posts and projects, feel free
           to subscribe!
         </p>
       </div>
-      <div className='container mt-2 max-w-3xl'>
+      <div className='container max-w-4xl'>
         <NewsletterForm />
       </div>
     </section>
