@@ -1,0 +1,103 @@
+---
+author: Mihai-Cristian Farcaș
+title: Worksite Management Studio Online
+date: 2025-05-17
+image: /images/projects/worksite-management-studio-online.jpeg
+source: https://images.unsplash.com/photo-1591955506264-3f5a6834570a?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29uc3RydWN0aW9uJTIwdWt8ZW58MHx8MHx8fDA%3D
+summary:
+  A full-stack application for managing worksite-related data, visualizing
+  charts and more.
+---
+
+### _Overview_
+
+Worksite Management Studio Online is a full-stack application designed to help
+construction companies efficiently manage their projects, worksites, and
+workforce. The application provides real-time tracking, resource allocation, and
+reporting capabilities to optimize construction operations.
+
+### _Features_
+
+- **User Authentication & Authorization**
+
+  - Secure login/registration system
+  - Role-based access control (Admin/Regular users)
+  - Activity logging for user actions
+
+- **Project Management**
+
+  - Create, view, update, and delete construction projects
+  - Track project status, timeline, and location
+  - Filter and search projects by various criteria
+
+- **Worker Management**
+
+  - Maintain a database of all workers with personal and professional details
+  - Track worker assignments across projects
+  - Monitor worker qualifications and performance
+
+- **Worksite Monitoring**
+
+  - Interactive maps with geolocation features for worksites
+  - Assign workers to specific worksites
+  - Track worksite progress and status
+
+- **Dashboard & Analytics**
+
+  - Visual representation of key metrics
+  - Worker distribution charts
+  - Salary and age demographic analysis
+  - Position distribution visualization
+
+- **Admin Features**
+  - User management capabilities
+  - System-wide activity monitoring
+  - Generate detailed reports
+
+### _Tech Stack_
+
+### Frontend
+
+- React 19 with TypeScript
+- React Router for navigation
+- Zustand for state management
+- Tailwind CSS for styling
+- Recharts for data visualization
+- Leaflet for maps integration
+- Vite as build tool
+
+### Backend
+
+- Go (Golang)
+- Echo framework for API endpoints
+- GORM for database operations
+- PostgreSQL database
+- JWT authentication
+
+### _Architecture_
+
+The application follows a modern client-server architecture:
+
+- **Frontend**: Single-page application (SPA) built with React and TypeScript
+- **Backend**: RESTful API built with Go/Echo framework
+- **Database**: PostgreSQL for data persistence
+- **Cache Layer**: For optimized performance
+- **Security**: JWT-based authentication and middleware protection
+
+### _API Documentation_
+
+The backend provides a RESTful API with the following main endpoints:
+
+- **Health**: `/health`
+- **Auth**: `/api/auth/login`, `/api/auth/register`
+- **Workers**: `/api/workers`
+- **Projects**: `/api/projects`
+- **Admin**: `/api/admin/users`, `/api/admin/users/:id/activity`
+
+[You can try it out here!](https://frontend-ymof.onrender.com)
+
+You can find the
+[source code](https://github.com/Forquosh/Worksite-Management-Studio-Online.git)
+on my Github.
+
+<ContentFooter />
