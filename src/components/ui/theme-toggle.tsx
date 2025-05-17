@@ -15,6 +15,7 @@ export default function ThemeToggle() {
   return (
     <Button
       variant='ghost'
+      className='rounded-full hover:bg-muted-foreground/10'
       size='sm'
       onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
       aria-label={
