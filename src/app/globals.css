@@ -112,4 +112,60 @@ body {
   .prose code span {
     @apply font-medium;
   }
+
+  /* Sugar High syntax highlighting styles */
+  .sh__keyword {
+    color: var(--sh-keyword);
+  }
+
+  .sh__string {
+    color: var(--sh-string);
+  }
+
+  .sh__identifier {
+    color: var(--sh-identifier);
+  }
+
+  .sh__class {
+    color: var(--sh-class);
+  }
+
+  .sh__property {
+    color: var(--sh-property);
+  }
+
+  .sh__entity {
+    color: var(--sh-entity);
+  }
+
+  .sh__jsxliterals {
+    color: var(--sh-jsxliterals);
+  }
+
+  .sh__sign {
+    color: var(--sh-sign);
+  }
+
+  .sh__comment {
+    color: var(--sh-comment);
+    font-style: italic;
+  }
+
+  /* Additional language-specific styling */
+  .sh__title {
+    color: var(--sh-class);
+    font-weight: 600;
+  }
+
+  .sh__punctuation {
+    color: var(--sh-sign);
+  }
+
+  .sh__number {
+    color: var(--sh-property);
+  }
+
+  .sh__boolean {
+    color: var(--sh-keyword);
+  }
 }
