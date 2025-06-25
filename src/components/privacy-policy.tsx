@@ -27,7 +27,7 @@ export function PrivacyPolicyDialog() {
             <p className='text-muted-foreground'>
               This privacy policy explains how I use your personal information.
             </p>
-            <h3 className='text-lg font-semibold'>Information I Collect</h3>
+            <h3 className='text-lg font-semibold'>Information I Use</h3>
             <p className='text-muted-foreground'>
               When you use my newsletter form, I make use of the following:{' '}
             </p>

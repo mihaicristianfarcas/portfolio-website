@@ -1,7 +1,7 @@
 const navigation = [
   {
     name: 'GitHub',
-    href: 'https://github.com/Forquosh',
+    href: 'https://github.com/mihaicristianfarcas',
     icon: (props: React.SVGProps<SVGSVGElement>) => (
       <svg
         {...props}
@@ -30,7 +30,7 @@ const navigation = [
   },
   {
     name: 'X',
-    href: 'https://x.com/Forquosh',
+    href: 'https://x.com/mihaicfarcas',
     icon: (props: React.SVGProps<SVGSVGElement>) => (
       <svg
         {...props}
@@ -46,7 +46,7 @@ const navigation = [
 
 export default function Footer() {
   return (
-    <footer className='container max-w-4xl py-8'>
+    <footer className='container max-w-4xl pb-8 pt-8'>
       <div>
         <div className='md:flex md:items-center md:justify-between'>
           <div className='flex justify-center space-x-6 md:order-2'>

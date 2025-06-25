@@ -1,6 +1,9 @@
 # Personal Portfolio Website
 
-A modern, responsive portfolio website built with **Next.js 15**, **TypeScript** and **Tailwind CSS**. Features a clean and minimal design with dark/light mode support and **dynamic content management** through **MDX**. Deployed on **[Vercel](https://vercel.com)**.
+A modern, responsive portfolio website built with **Next.js 15**, **TypeScript**
+and **Tailwind CSS**. Features a clean and minimal design with dark/light mode
+support and **dynamic content management** through **MDX**. Deployed on
+**[Vercel](https://vercel.com)**.
 
 ## Features
 
@@ -32,7 +35,8 @@ A modern, responsive portfolio website built with **Next.js 15**, **TypeScript**
 pnpm install
 ```
 
-3. Create a `.env` file with required environment variables for managing emails and newsletter:
+3. Create a `.env` file with required environment variables for managing emails
+   and newsletter:
 
 ```bash
 RESEND_API_KEY=your_resend_api_key
@@ -58,7 +62,8 @@ pnpm dev
 
 ## Content Management
 
-Posts and projects are managed through MDX files in the `/src/content` directory. Each content piece includes frontmatter for metadata:
+Posts and projects are managed through MDX files in the `/src/content`
+directory. Each content piece includes frontmatter for metadata:
 
 ```yaml
 ---
