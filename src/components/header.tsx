@@ -11,8 +11,8 @@ export default function Header() {
   return (
     <header
       className={cn(
-        'fixed inset-x-0 top-0 z-50 mx-auto max-w-4xl py-6 backdrop-blur-sm',
-        scrolled && 'border-bottom shadow-lg'
+        'fixed inset-x-0 top-0 z-50 mx-auto max-w-4xl py-6 bg-background/80 backdrop-blur-sm',
+        scrolled && 'border-bottom shadow-md'
       )}
     >
       <nav className='container flex items-center justify-between'>
