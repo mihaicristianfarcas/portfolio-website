@@ -73,7 +73,7 @@ complete with live previews.
 
    ```env
    # Database
-   DATABASE_URL="postgresql://username:password@localhost:5432/vibe"
+   DATABASE_URL="postgresql:/..."
 
    # Clerk Authentication
    NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_...
@@ -85,9 +85,12 @@ complete with live previews.
    # OpenAI
    OPENAI_API_KEY=sk-...
 
-   # Inngest
-   INNGEST_EVENT_KEY=your_inngest_event_key
-   INNGEST_SIGNING_KEY=your_inngest_signing_key
+   # Next
+   NEXT_PUBLIC_APP_URL='http://localhost:3000'
+   NEXT_PUBLIC_CLERK_SIGN_UP_URL='/sign-up'
+   NEXT_PUBLIC_CLERK_SIGN_IN_URL='/sign-in'
+   NEXT_PUBLIC_CLERK_SIGN_IN_FALLBACK_REDIRECT_URL='/'
+   NEXT_PUBLIC_CLERK_SIGN_UP_FALLBACK_REDIRECT_URL='/'
    ```
 
 4. **Set up the database**
