@@ -2,19 +2,10 @@
 
 import Link from 'next/link'
 import ThemeToggle from '@/components/ui/theme-toggle'
-import { cn } from '@/lib/utils'
-import { useScrollTop } from '../../hooks/use-scroll-top'
 
 export default function Header() {
-  const scrolled = useScrollTop()
-
   return (
-    <header
-      className={cn(
-        'fixed inset-x-0 top-0 z-50 mx-auto max-w-4xl py-6 bg-background/80 backdrop-blur-sm',
-        scrolled && 'border-bottom shadow-md'
-      )}
-    >
+    <header className='fixed inset-x-0 top-0 z-50 mx-auto max-w-4xl bg-background/50 py-6 backdrop-blur-sm'>
       <nav className='container flex items-center justify-between'>
         <div>
           <Link href='/' className='title font-bold no-underline'>

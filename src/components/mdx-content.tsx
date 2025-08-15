@@ -15,21 +15,24 @@ function Code({ children, ...props }: any) {
 
 function Pre({ children, ...props }: any) {
   // Check if this is a code block by looking for a nested code element
-  if (children?.type === 'code' && typeof children.props.children === 'string') {
+  if (
+    children?.type === 'code' &&
+    typeof children.props.children === 'string'
+  ) {
     const codeContent = children.props.children
-    
+
     const codeHTML = highlight(codeContent)
-    
+
     return (
       <pre {...props}>
-        <code 
+        <code
           className={children.props.className || ''}
-          dangerouslySetInnerHTML={{ __html: codeHTML }} 
+          dangerouslySetInnerHTML={{ __html: codeHTML }}
         />
       </pre>
     )
   }
-  
+
   // For any other pre content, return as-is
   return <pre {...props}>{children}</pre>
 }
