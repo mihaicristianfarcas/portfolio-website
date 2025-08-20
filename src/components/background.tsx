@@ -9,7 +9,7 @@ export default function Background() {
           backgroundImage: 'url(/images/background.jpg)'
         }}
       />
-      <div className='absolute inset-0 bg-background/90' />
+      <div className='absolute inset-0 bg-background/80' />
     </div>
   )
 }
